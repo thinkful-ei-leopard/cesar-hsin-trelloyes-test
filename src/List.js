@@ -2,8 +2,8 @@ import './List.css';
 import React from 'react';
 import Card from './Card.js';
 
-function List(props){
-    console.log(props);
+export default function List(props){
+    
     const cardArray = props.cards.map((item, index) => 
         <Card key={index} title={item.title} content={item.content} />);
     return(
@@ -21,4 +21,4 @@ function List(props){
     )
 };
 
-export default List;
+//export default List;

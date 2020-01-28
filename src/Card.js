@@ -1,8 +1,9 @@
-import './Card.css';
-import React from 'react';
 
-function Card(props){
-    console.log(props);
+import React from 'react';
+import './Card.css';
+
+export default function Card(props){
+    //console.log(props);
     return(
         <div className="Card" key={props.id}>
             <button type="button">delete</button>
@@ -12,4 +13,6 @@ function Card(props){
     )
 }
 
-export default Card;
+
+
+//export default Card;
